@@ -1,43 +1,74 @@
-<!-- Name: BENNITON FERNANDES | HOME PAGE -->
+<!-- Fancy Home Page by Benniton Fernandes -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Project Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="BENNITON">
+  <title>My Awesome HTML Projects</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      background-color: lightyellow;
-      font-family: Arial;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
       text-align: center;
     }
     h1 {
-      color: darkblue;
+      font-size: 3rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
     }
-    a {
+    p.description {
+      font-size: 1.2rem;
+      color: #34495e;
+      margin-bottom: 30px;
+    }
+    .buttons a {
       display: inline-block;
-      margin: 20px;
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: lightblue;
-      color: black;
+      background: #2980b9;
+      color: white;
       text-decoration: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.1rem;
       border-radius: 10px;
+      transition: 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
-    a:hover {
-      background-color: deepskyblue;
+    .buttons a:hover {
+      background: #3498db;
+      transform: translateY(-3px);
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to My HTML Projects</h1>
-  <p><b>Select a page to view:</b></p>
+  <h1>🌟 Welcome to My HTML World 🌟</h1>
+  <p class="description">Explore my cool and creative school projects made with HTML.</p>
 
-  <a href="school.html">📘 Fr. Agnel School History</a><br>
-  <a href="instruments.html">🎸 Display of Instruments</a>
+  <div class="buttons">
+    <a href="school.html">📘 Fr. Agnel School History</a>
+    <a href="instruments.html">🎸 Display of Instruments</a>
+  </div>
 
-  <br><br>
-  <p>Created by <strong>Benniton Fernandes</strong></p>
+  <footer>
+    Made with ❤️ by <strong>Benniton Fernandes</strong> | Roll No: 4
+  </footer>
 
 </body>
 </html>
